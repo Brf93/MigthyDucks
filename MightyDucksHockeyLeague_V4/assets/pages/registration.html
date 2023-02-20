@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/MightyDuck_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style_MDH.css">
+    <title>Mighty Ducks Hockey League | Registration Form</title>
+</head>
+<body class ="fondoPrincipal">
+    <div id = "acomodarTodo">
+        <header>
+            <h1>Mighty Ducks Hockey League</h1>
+            <div class = "banner">
+                <nav>
+                    <div class="menu">
+                        <a href="../../index.html">HOME</a>
+                    </div>
+                    <div class="menu">
+                        <a href="../pages/aboutUs.html">ABOUT</a>
+                    </div>
+                    <div class="menu">
+                        <a href="../pages/gameInfo.html">SCHEDULE</a>
+                    </div>
+                    <div class="menu" >
+                        <a href="../pages/rules.html">RULES</a>
+                    </div>
+                    <div class="menu" id ="activo">
+                        <a href="#">REGISTRATION</a>
+                    </div>
+                    <div class="menu">
+                        <a href="../pages/contact.html">CONTACT</a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class = "fondoGlobal">
+            <main>
+                <div class = "subtitulo modPrincipal">
+                    <h2>REGISTRATION FORM</h2>
+                </div>
+                <div class = "centrarTodo modPrincipal modRules">
+                    <div class = "alinearLogo"><a href="../../index.html"><img  src="../img/MightyDuck_logo.png" alt="logo MDHL"></a></div>
+                    <div class = "articulosMain espaciadoAbout">
+                        <div class = "modForm">
+                            <form action="../pages/show_data.html" target="blank">
+                                    <fieldset class="datosPersonales">
+                                        <div class = "datosJugador">
+                                            <label for="playerFNameTxt">Player's First Name:</label>
+                                            <input type="text" name="playerName" id="playerFNameTxt">
+                                            <label for="LastNameTxt">Last Name:</label>
+                                            <input type="text" name="lastName" id="LastNameTxt">
+                                        </div>
+                                        <div class = "datosJugadorCalle">
+                                            <label for="streetAddressTxt">Street Address:</label>
+                                            <input type="text" name="streetAddressTxt" id="streetAddressTxt">
+                                        </div>
+                                        <div class = "datosJugCiudad">
+                                            <label for="cityTxt">City:</label>
+                                            <input type="text" name="cityTxt" id="cityTxt">
+                                            <label for="zipCodeTxt">Zip Code:</label>
+                                            <input type="text" name="zipCodeTxt" id="zipCodeTxt">
+                                        </div>
+                                        <div class = "datosJugFecha">
+                                            <label for="birthDate"><span class="formatoFecha">Birth Date:</span></label>
+                                            <input type="date" name="birthDate" id="birthDate">
+                                            <div class="gender">
+                                                <div>Gender:</div>
+                                                <div><label for="genderBoxM"><span class="valoresOpciones">Male</span></label></div>
+                                                <input type="radio" name="gerderType" id="genderBoxM" value="male">
+                                                <div><label for="genderBoxF"><span class="valoresOpciones">Female</span></label></div>
+                                                <input type="radio" name="gerderType" id="genderBoxF" value="female">
+                                            </div>
+                                            </div>
+                                        <div class = "ordenGrado">
+                                            <div>Grade:</div>
+                                            <input type="radio" name="gradeRadio" id="gradeBoxPre" value="pre-school">
+                                            <label for="gradeBoxPre"><span class="valoresOpciones">Pre-School</span></label>
+                                            <input type="radio" name="gradeRadio" id="gradeBox1th" value="1st">
+                                            <label for="gradeBox1th"><span class="valoresOpciones">1st</span></label>
+                                            <input type="radio" name="gradeRadio" id="gradeBox2nd" value="2nd">
+                                            <label for="gradeBox2nd"><span class="valoresOpciones">2nd</span></label>
+                                            <input type="radio" name="gradeRadio" id="gradeBox3rd" value="3rd">
+                                            <label for="gradeBox3rd"><span class="valoresOpciones">3rd</span></label>
+                                            <input type="radio" name="gradeRadio" id="gradeBox4th" value="4th">
+                                            <label for="gradeBox4th"><span class="valoresOpciones">4th</span></label>
+                                            <input type="radio" name="gradeRadio" id="gradeBox5th" value="5th">
+                                            <label for="gradeBox5th"><span class="valoresOpciones">5t</span>h</label>
+                                        </div>
+                                    </fieldset>
+                                    <div>
+                                        <fieldset>
+                                            <legend class = "tituloSeccionForm">Which elementary school do you live near?</legend>
+                                            <div class = "tituloSeccionForm"><label for="escuelaDesplegable">Closest School:</label></div>
+                                            <div class = "ordenSchool">
+                                                <div>
+                                                    <select name="school" id="escuelaDesplegable">
+                                                        <option value="NoSelected">--Please choose a school--</option>
+                                                        <option value="ajKatzenmaier">AJ Katzenmaier</option>
+                                                        <option value="howardA_Yeager">Howard A Yeager</option>
+                                                        <option value="greenbay">Greenbay</option>
+                                                        <option value="marjoriePHart">Marjorie P Hart</option>
+                                                        <option value="northElementary">North Elementary</option>
+                                                        <option value="South Elementary">South Elementary</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <legend class = "tituloSeccionForm">What position(s) do you normally play? (check all that apply)</legend>
+                                            <div class = "ordenSchool">
+                                                <div>
+                                                    <input type="checkbox" name="positionBox" id="foward" value="foward">
+                                                    <label for="foward"><span class="valoresOpciones">Forward</span></label>
+                                                    <input type="checkbox" name="positionBox" id="midfield" value="midfield">
+                                                    <label for="midfield"><span class="valoresOpciones">Midfield</span></label>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" name="positionBox" id="defense" value="defense">
+                                                    <label for="defense"><span class="valoresOpciones">Defense</span></label>
+                                                    <input type="checkbox" name="positionBox" id="goalKeeper" value="goalKeeper">
+                                                    <label for="goalKeeper"><span class="valoresOpciones">GoalKeepe</span>r</label>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <fieldset>
+                                            <legend class = "tituloSeccionForm">Uniform Size</legend>
+                                            <div>
+                                                <input type="radio" name="uniformSize" id="YouthSmall" value="YouthSmall">
+                                                <label for="YouthSmall"><span class="valoresOpciones">Youth Small</span></label>
+                                                <input type="radio" name="uniformSize" id="YouthMedium" value="YouthMedium">
+                                                <label for="YouthMedium"><span class="valoresOpciones">Youth Medium</span></label>
+                                                <input type="radio" name="uniformSize" id="YouthLarge" value="YouthLarge">
+                                                <label for="YouthLarge"><span class="valoresOpciones">Youth Large</span></label>
+                                                <input type="radio" name="uniformSize" id="small" value="small">
+                                                <label for="small"><span class="valoresOpciones">Small</span></label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="uniformSize" id="medium" value="medium">
+                                                <label for="medium"><span class="valoresOpciones">Medium</span></label>
+                                                <input type="radio" name="uniformSize" id="large" value="large">
+                                                <label for="large"><span class="valoresOpciones">Large</span></label>
+                                                <input type="radio" name="uniformSize" id="xLarge" value="xLarge">
+                                                <label for="xLarge"><span class="valoresOpciones">Extra-Larg</span>e</label>
+                                            </div>
+                                        </fieldset>
+                                    </div>
+                                    <div>
+                                        <div class = "terminosYCond">
+                                            <h4>Premission to Play</h4>
+                                            <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Mighty Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the “League” accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers,including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,which transportation</p>
+                                            <p>By entering your name below, I here by agree and authorize the above. In addition, by signing below, l also acknowledge that I have read the cancellation policy and agree to its terms.<p>
+                                        </div>
+                                    <fieldset>
+                                        <div class="firmaAdulto">
+                                            <label for="signature" class = "tituloSeccionForm">Parent/Guardian Signature:</label>
+                                            <input type="text" name="signatureTxt" id="signature">
+                                        </div>
+                                        <div class="fechaFirma">
+                                            <label for="dateSignature" class = "tituloSeccionForm tituloFechaFirma">Date:</label>
+                                            <input type="date" name="dateTxt" id="dateSignature">
+                                        </div>
+                                    </fieldset>
+                                    </div>
+                                    <div>
+                                        <fieldset class="aceptarTerminos">
+                                            <label for="termsCheck" class = "tituloSeccionForm">I have read and I accept the terms and conditions <span class="checkTerms"></span></label>
+                                            <input type="checkbox" name="agreeTermsBox" id="termsCheck" value="Checked" required>
+                                        </fieldset>
+                                        <div class="submitForm"><input type="submit" value="Submit"></div>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class = "alinearLogo"><a href="../../index.html"><img  src="../img/MightyDuck_logo.png" alt="logo MDHL"></a></div>
+                </div>
+            </main>
+            <footer id= "rulesFooter">
+                <p>Last update: October 20th, 2022</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

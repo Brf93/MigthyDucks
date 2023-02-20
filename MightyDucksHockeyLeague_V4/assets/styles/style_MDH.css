@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Nova+Square&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.fondoGlobal{
+    background-color: #000000ba;
+    width: 100%;
+}
+#acomodarTodo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header{ /*Dimensiones del header*/
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: .5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+}
+header div a{
+    display: flex;
+    justify-content: center;
+}
+.fondoPrincipal{
+    background-image: url("../img/canchaHieloByW2.jpg");
+    top: 10px;
+    background-size: cover;
+    background-attachment: fixed; /*Evita que se duplique la imagen al fijarla y realizar el scroll sobre el resto*/
+}
+main{
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content:left;
+    flex-direction: column;
+    text-align: justify;
+}
+.modPrincipal{
+    color: #ffffff;
+    font-weight: 200;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.articulosMain{
+    display: flex;
+    flex-direction: column;
+}
+.espaciadoAbout{
+    padding: 2px 10px;
+}
+.espaciadoAbout p{
+    padding: 10px 0px;
+    line-height: 19px;
+}
+h1{
+    padding: 0px 5px;
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff;
+    font-weight: 700;
+    display: flex;
+}
+.banner{ /*Propiedades del div contenedor del menu*/
+    display: flex;
+    width: 100%;
+    position: sticky; 
+    top: 2px;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 2rem;
+}
+.subtitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color:#E6B92B;
+    font-size: 19px;
+    padding-top: 3px;
+    background-color: #000000;
+}
+h2{
+    font-weight: 500;
+}
+.alinearLogo {
+    max-width: 20%;
+}
+.alinearLogo a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.alinearLogo img{ /*Dar tamaño al logo superior*/
+    width: 60%; 
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 17px;
+    padding: 0px 5px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+h3{
+    font-weight: 400;
+}
+h4{
+    font-weight: bold;
+    padding: 10px;
+}
+.centrarTodo {
+    padding: 2rem 2rem;
+}
+main article p{
+    padding: 10px;
+    text-indent: 12px;
+}
+
+aside img {
+    max-width: 100%;
+    margin: 2px 2px;
+}
+.menu{ /*Ubicacion y tamaño de la barra de menu individualmente*/
+    margin: 1px 2px;
+    padding: 2px;
+    border-radius: 1px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.563);
+    border-radius: 2px;
+}
+.menu a {
+    color: #000000;
+    font-weight: 500;
+}
+#activo { /*Propiedades de color y comportamiento de la barra de navegacion activa*/
+    background-color: rgba(1, 18, 35, 0);
+ }
+#activo a{
+    color: #E6B92B;
+ }
+#activo a:hover{
+    color: #ffffff;
+ }
+
+ .menu:hover{
+    background-color: rgba(255, 255, 255, 0);
+ }
+ .menu a:hover /*Propiedades de color y comportamiento de la barra de navegacion*/
+ {
+    color: #E6B92B;
+    font-size: 18px;
+ }
+ .mail{ /*Propiedades de color y comportamiento de los links de contacto*/
+    color: #E6B92B;
+    text-decoration: none;
+ }
+ .mail:hover{
+    border-radius: 2px;
+    border-width: .5px;
+    color: #00685E;
+    font-size: 15.5px;
+ }
+ .subRules{
+    color: #ffffff;
+    padding: 0px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.subRules h5{
+    font-weight: 300;
+    font-size: 19px;
+}
+#schedule{
+    color: #E6B92B;
+    text-decoration: none;
+}
+
+#schedule:hover{
+    border-radius: 2px;
+    border-width: .5px;
+    color: #00685E;
+    font-size: 15.5px;
+}
+footer{
+    width: 100%;
+    max-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+footer h6{
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+}
+footer a img {
+    max-width: 1.5rem;
+    padding: 3px;
+    gap: 1rem;
+}
+footer img:hover{
+    max-width: 1.9rem;
+}
+footer div{
+   display: flex;
+}
+#rulesFooter p {
+    font-weight: 100;
+    font-style: italic;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #ffffff;
+    font-size: 10px;
+}
+.modRules{
+    list-style-position: inside;
+}
+.articulo1rules{
+    padding: 50px 10px 10px 10px;;
+}
+.articulo2rules{
+    padding: 10px 10px 10px 10px;;
+}
+.articulo2rules li{
+    padding: 10px 10px 10px 10px;;
+}
+.articulo2rules ul{
+    padding: 1px 40px 1px 40px;
+}
+.articulo2rules ol{
+    padding: 6px;
+}
+.tablaDiv{
+   padding: 8px 0.5px;
+}
+table{
+    width: 100%;
+}
+table, td, th{
+    border: 1px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    border: none;
+}
+caption{
+    text-decoration: underline;
+    text-align: left;
+    margin-top: .5rem;
+    padding: 5px;
+    font-style: italic;
+    font-weight: 100;
+    caption-side:bottom;
+}
+td{
+    color: #000000;
+    font-weight: 400;
+}
+thead{
+    text-align: center;
+    padding: 10px;
+}
+tbody td {
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+tbody td:hover {
+    background-color: #0000004e ;
+    font-size: 15px;
+}
+th{
+    background-color:  #211c17;
+    font-weight: 400;
+    color: #fff;
+    padding: 4px;
+}
+tbody tr:nth-child(odd){
+    background-color:#f8e12ef0;
+}
+tbody tr:nth-child(even){
+    background-color:#ffef79ea;
+}
+
+.baseTabla{
+    padding: 40px 0px 10px 0px;
+}
+.baseTabla div{
+    padding: 10px 0px;
+}
+.baseTabla span{
+    padding: 4px 0px;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+}
+.spanBold{
+    font-weight: 450;
+    font-size: 17px;
+}
+form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffffffce;
+    color: #000000;
+}
+.ordenGrado{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    align-items: center;
+}
+.valoresOpciones{
+    font-size: 85%;
+    font-style: italic;
+}
+.tituloSeccionForm{
+    font-weight: bold;
+}
+.firmaAdulto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; 
+}
+.aceptarTerminos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+#signature{
+    min-width: 300px;
+}
+.fechaFirma{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+fieldset{
+    border: none;
+    padding: .5rem .5rem 2rem .5rem;
+}
+.submitForm{
+    padding: 0px 0px 8px 8px;
+    
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    width: 12vw;
+    background-color: rgba(255, 255, 255, 0);
+}
+input[type="text"]:hover{
+    background-color: #00000010;
+}
+input[type="submit"]:hover{
+    background-color: #0000001d;
+    border-color: #00000018;
+}
+.datosPersonales{
+    max-height: 250px;
+}
+.datosJugador{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.datosJugadorCalle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+}
+.datosJugCiudad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.datosJugFecha{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    gap: 10px;
+}
+#playerFNameTxt{
+    min-width: 30%;
+}
+#LastNameTxt{
+    min-width: 30%;
+}
+.gender{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:flex-start;
+    padding-left: 50px;
+    gap: 10px;
+}
+.gender div{
+    padding: 0px 5px;
+}
+#zipCodeTxt{
+    min-width: 45%;
+}
+form label{
+    line-height: 40px;
+}
+#streetAddressTxt{
+    min-width: 80%;
+}
+#cityTxt{
+    min-width: 30%;
+}
+.formatoFecha{
+    padding-right: 2px;
+}
+.checkTerms {
+    padding-left: 5px;
+}
+.ordenSchool{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2px;
+    padding-top: 10px;
+}
+.terminosYCond p{
+    padding: 10px;
+    text-indent: 12px;
+}
+/*Ventana modal de mapas*/
+.modal-contenido{
+    background-color:rgba(0, 0, 0, 0.351);
+    width:420px;
+    padding: 10px 10px;
+    margin: 5% auto;
+    position: static;
+    height: 350px;
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all .5s;
+  }
+  /*id de cada mapa*/
+  #modalAJ:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+  #modalGreen:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+  #modalHow:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+  #modalMarj:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+  #modalNorth:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+  #modalSouth:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+.linkMapa a{
+    font-weight: 300;
+    text-decoration: none;
+    color: #E6B92B;
+  }
+.linkMapa a:hover{
+    color:#00685E;
+    font-size: 15px;
+  }
+
+.ordenarMapaTitulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ordenarMapa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #0000002c;
+  }
+.ordenarMapa div {
+    padding: 10px 10px;
+  }
+.ordenarMapaTitulo h3{
+    padding: 30px 10px;
+  }
+iframe{
+    width: 400px;
+    height:300px;
+  }
+
